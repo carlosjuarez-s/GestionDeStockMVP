@@ -1,0 +1,9 @@
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\obj\Debug\48284_TP6_Persistencia.csproj.AssemblyReference.cache
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\obj\Debug\48284_TP6_Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\bin\Debug\48284_TP6_Persistencia.dll
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\bin\Debug\48284_TP6_Persistencia.pdb
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\bin\Debug\48284_TP6__Dominio.dll
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\bin\Debug\48284_TP6__Dominio.pdb
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\obj\Debug\48284_TP6_Persistencia.csproj.CopyComplete
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\obj\Debug\48284_TP6_Persistencia.dll
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6_Persistencia\obj\Debug\48284_TP6_Persistencia.pdb

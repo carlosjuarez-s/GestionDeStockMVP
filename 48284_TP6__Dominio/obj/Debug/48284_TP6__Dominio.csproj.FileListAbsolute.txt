@@ -1,0 +1,6 @@
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6__Dominio\bin\Debug\48284_TP6__Dominio.dll
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6__Dominio\bin\Debug\48284_TP6__Dominio.pdb
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6__Dominio\obj\Debug\48284_TP6__Dominio.csproj.AssemblyReference.cache
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6__Dominio\obj\Debug\48284_TP6__Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6__Dominio\obj\Debug\48284_TP6__Dominio.dll
+C:\Users\Radio\source\repos\48284_TP6_Presentacion\48284_TP6__Dominio\obj\Debug\48284_TP6__Dominio.pdb
