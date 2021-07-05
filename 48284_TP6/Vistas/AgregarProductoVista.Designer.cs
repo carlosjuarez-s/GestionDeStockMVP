@@ -32,7 +32,6 @@ namespace _48284_TP6.Vistas
             this.components = new System.ComponentModel.Container();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.bsAgregarProducto = new System.Windows.Forms.BindingSource(this.components);
             this.btnCrearProducto = new System.Windows.Forms.Button();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -51,6 +50,7 @@ namespace _48284_TP6.Vistas
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblEstado = new System.Windows.Forms.Label();
             this.comboBoxEstado = new System.Windows.Forms.ComboBox();
+            this.bsAgregarProducto = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bsAgregarProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,11 +74,6 @@ namespace _48284_TP6.Vistas
             this.txtCodigo.Size = new System.Drawing.Size(530, 26);
             this.txtCodigo.TabIndex = 1;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
-            // 
-            // bsAgregarProducto
-            // 
-            this.bsAgregarProducto.DataSource = typeof(_48284_TP6__Dominio.Producto);
-            this.bsAgregarProducto.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // btnCrearProducto
             // 
@@ -135,7 +130,7 @@ namespace _48284_TP6.Vistas
             // 
             // txtPorcentajeIva
             // 
-            this.txtPorcentajeIva.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsAgregarProducto, "PorcentajeIva", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtPorcentajeIva.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsAgregarProducto, "PorcentajeIva", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "P"));
             this.txtPorcentajeIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPorcentajeIva.Location = new System.Drawing.Point(173, 154);
             this.txtPorcentajeIva.Name = "txtPorcentajeIva";
@@ -271,6 +266,11 @@ namespace _48284_TP6.Vistas
             this.comboBoxEstado.TabIndex = 18;
             this.comboBoxEstado.Visible = false;
             this.comboBoxEstado.SelectedIndexChanged += new System.EventHandler(this.comboBoxEstado_SelectedIndexChanged);
+            // 
+            // bsAgregarProducto
+            // 
+            this.bsAgregarProducto.DataSource = typeof(_48284_TP6__Dominio.Producto);
+            this.bsAgregarProducto.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // AgregarProductoVista
             // 

@@ -22,7 +22,10 @@ namespace _48284_TP6.Vistas
             InitializeComponent();
             _presentador = new GestorAgregarProductoPresentador(this);
             bsAgregarProducto.DataSource = new Producto();
+
             comboBoxEstado.DataSource = Enum.GetValues(typeof(Estado));
+
+           
         }
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
@@ -109,6 +112,12 @@ namespace _48284_TP6.Vistas
         private void txtPorcentajeIva_TextChanged(object sender, EventArgs e)
         {
             txtPorcentajeIva.BackColor = Color.White;
+            txtPorcentajeIva.Text.Replace("%", "");
+            /*if(!txtPorcentajeIva.Text.ToString().Contains("%"))
+            {
+                var numeros = txtPorcentajeIva.Text.ToString();
+                txtPorcentajeIva.Text = string.Concat(numeros, "%");
+            }*/
         }
 
         private void lblPorcentajeIva_Click(object sender, EventArgs e)
