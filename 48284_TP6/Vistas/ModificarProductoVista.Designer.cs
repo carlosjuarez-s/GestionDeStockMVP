@@ -30,8 +30,10 @@ namespace _48284_TP6.Vistas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarProductoVista));
             this.btnCancelar = new System.Windows.Forms.Button();
             this.comboBoxEstado = new System.Windows.Forms.ComboBox();
+            this.bsModificarProducto = new System.Windows.Forms.BindingSource(this.components);
             this.txtMargenDeGanacia = new System.Windows.Forms.TextBox();
             this.txtPrecioFinal = new System.Windows.Forms.TextBox();
             this.lblMargenGanancia = new System.Windows.Forms.Label();
@@ -50,8 +52,11 @@ namespace _48284_TP6.Vistas
             this.btnModificarProducto = new System.Windows.Forms.Button();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.bsModificarProducto = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bsModificarProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -73,6 +78,10 @@ namespace _48284_TP6.Vistas
             this.comboBoxEstado.Name = "comboBoxEstado";
             this.comboBoxEstado.Size = new System.Drawing.Size(157, 21);
             this.comboBoxEstado.TabIndex = 38;
+            // 
+            // bsModificarProducto
+            // 
+            this.bsModificarProducto.DataSource = typeof(_48284_TP6__Dominio.Producto);
             // 
             // txtMargenDeGanacia
             // 
@@ -188,7 +197,6 @@ namespace _48284_TP6.Vistas
             this.txtCostoSinIva.Name = "txtCostoSinIva";
             this.txtCostoSinIva.Size = new System.Drawing.Size(530, 26);
             this.txtCostoSinIva.TabIndex = 26;
-            this.txtCostoSinIva.TextChanged += new System.EventHandler(this.txtCostoSinIva_TextChanged);
             // 
             // lblCostoSinIva
             // 
@@ -250,9 +258,25 @@ namespace _48284_TP6.Vistas
             this.lblCodigo.TabIndex = 20;
             this.lblCodigo.Text = "Codigo";
             // 
-            // bsModificarProducto
+            // pictureBox2
             // 
-            this.bsModificarProducto.DataSource = typeof(_48284_TP6__Dominio.Producto);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(709, 350);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 41;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(709, 152);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
             // 
             // ModificarProductoVista
             // 
@@ -260,6 +284,8 @@ namespace _48284_TP6.Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 537);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.comboBoxEstado);
             this.Controls.Add(this.txtMargenDeGanacia);
@@ -286,6 +312,8 @@ namespace _48284_TP6.Vistas
             this.Text = "ModificarProductoVista";
             this.Load += new System.EventHandler(this.ModificarProductoVista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsModificarProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +342,7 @@ namespace _48284_TP6.Vistas
         private System.Windows.Forms.Button btnModificarProducto;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label lblCodigo;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -28,11 +28,6 @@ namespace _48284_TP6.Vistas
             bsModificarProducto.DataSource = productoClon.Clone();
         }
 
-        private void txtCostoSinIva_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ModificarProductoVista_Load(object sender, EventArgs e)
         {
 

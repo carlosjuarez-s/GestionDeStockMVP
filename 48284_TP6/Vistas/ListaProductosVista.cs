@@ -49,6 +49,7 @@ namespace _48284_TP6.Vistas
         {
             var codigo = ObtenerCodigoProductoSeleccionado();
             var modificarProductoVista = new ModificarProductoVista(codigo);
+            modificarProductoVista.StartPosition = FormStartPosition.CenterParent;
             modificarProductoVista.ShowDialog();
             productoBindingSource.ResetBindings(true);
         }
@@ -56,6 +57,7 @@ namespace _48284_TP6.Vistas
         private void IconCrearProducto_Click(object sender, EventArgs e)
         {
             var agregarProducto = new AgregarProductoVista();
+            agregarProducto.StartPosition = FormStartPosition.CenterParent;
             agregarProducto.ShowDialog();
             productoBindingSource.ResetBindings(true);
         }
@@ -63,21 +65,6 @@ namespace _48284_TP6.Vistas
         public bool ConfirmarEliminarProducto(string mensaje)
         {
             return MessageBox.Show(mensaje, "Eliminar Producto", MessageBoxButtons.YesNo) == DialogResult.Yes;
-        }
-
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
-
-        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void ListaProductosVista_Load(object sender, EventArgs e)

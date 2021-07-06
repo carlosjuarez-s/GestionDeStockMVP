@@ -22,10 +22,7 @@ namespace _48284_TP6.Vistas
             InitializeComponent();
             _presentador = new GestorAgregarProductoPresentador(this);
             bsAgregarProducto.DataSource = new Producto();
-
             comboBoxEstado.DataSource = Enum.GetValues(typeof(Estado));
-
-           
         }
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
@@ -94,35 +91,10 @@ namespace _48284_TP6.Vistas
             return MessageBox.Show(mensaje, "Campo Faltante", MessageBoxButtons.OK) == DialogResult.OK;
         }
 
-        private void lblCostoConIva_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtExistencia_TextChanged(object sender, EventArgs e)
         {
             txtExistencia.BackColor = Color.White;
-        }
-
-        private void lblExistencia_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPorcentajeIva_TextChanged(object sender, EventArgs e)
-        {
-            txtPorcentajeIva.BackColor = Color.White;
-            txtPorcentajeIva.Text.Replace("%", "");
-            /*if(!txtPorcentajeIva.Text.ToString().Contains("%"))
-            {
-                var numeros = txtPorcentajeIva.Text.ToString();
-                txtPorcentajeIva.Text = string.Concat(numeros, "%");
-            }*/
-        }
-
-        private void lblPorcentajeIva_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void txtCostoSinIva_TextChanged(object sender, EventArgs e)
@@ -130,63 +102,29 @@ namespace _48284_TP6.Vistas
             txtCostoSinIva.BackColor = Color.White;
         }
 
-        private void lblCostoSinIva_Click(object sender, EventArgs e)
+        private void txtCostoSinIva_TabIndexChanged(object sender, EventArgs e)
         {
 
         }
+
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             txtDescripcion.BackColor = Color.White;
         }
 
-        private void lblDescripcion_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCostoConIva_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
             txtCodigo.BackColor = Color.White;
         }
 
-        private void lblCodigo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblMargenGanancia_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AgregarProductoVista_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void comboBoxEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void txtPrecioFinal_TextChanged(object sender, EventArgs e)
-        {
-        }
 
-        private void txtMargenDeGanacia_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
