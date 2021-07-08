@@ -90,7 +90,7 @@ namespace _48284_TP6.Vistas
             this.btnCrearProducto.Location = new System.Drawing.Point(567, 490);
             this.btnCrearProducto.Name = "btnCrearProducto";
             this.btnCrearProducto.Size = new System.Drawing.Size(154, 35);
-            this.btnCrearProducto.TabIndex = 2;
+            this.btnCrearProducto.TabIndex = 10;
             this.btnCrearProducto.Text = "Crear";
             this.btnCrearProducto.UseVisualStyleBackColor = true;
             this.btnCrearProducto.Click += new System.EventHandler(this.btnGuardarProducto_Click);
@@ -102,7 +102,7 @@ namespace _48284_TP6.Vistas
             this.txtDescripcion.Location = new System.Drawing.Point(173, 64);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(530, 26);
-            this.txtDescripcion.TabIndex = 4;
+            this.txtDescripcion.TabIndex = 2;
             this.txtDescripcion.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblDescripcion
@@ -122,7 +122,7 @@ namespace _48284_TP6.Vistas
             this.txtCostoSinIva.Location = new System.Drawing.Point(173, 109);
             this.txtCostoSinIva.Name = "txtCostoSinIva";
             this.txtCostoSinIva.Size = new System.Drawing.Size(530, 26);
-            this.txtCostoSinIva.TabIndex = 6;
+            this.txtCostoSinIva.TabIndex = 3;
             this.txtCostoSinIva.TabIndexChanged += new System.EventHandler(this.txtCostoSinIva_TabIndexChanged);
             this.txtCostoSinIva.TextChanged += new System.EventHandler(this.txtCostoSinIva_TextChanged);
             // 
@@ -138,12 +138,12 @@ namespace _48284_TP6.Vistas
             // 
             // txtPorcentajeIva
             // 
-            this.txtPorcentajeIva.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsAgregarProducto, "PorcentajeIva", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "p"));
+            this.txtPorcentajeIva.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bsAgregarProducto, "PorcentajeIva", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtPorcentajeIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPorcentajeIva.Location = new System.Drawing.Point(173, 154);
             this.txtPorcentajeIva.Name = "txtPorcentajeIva";
             this.txtPorcentajeIva.Size = new System.Drawing.Size(530, 26);
-            this.txtPorcentajeIva.TabIndex = 8;
+            this.txtPorcentajeIva.TabIndex = 4;
             // 
             // lblPorcentajeIva
             // 
@@ -162,7 +162,7 @@ namespace _48284_TP6.Vistas
             this.txtExistencia.Location = new System.Drawing.Point(173, 201);
             this.txtExistencia.Name = "txtExistencia";
             this.txtExistencia.Size = new System.Drawing.Size(530, 26);
-            this.txtExistencia.TabIndex = 10;
+            this.txtExistencia.TabIndex = 5;
             this.txtExistencia.TextChanged += new System.EventHandler(this.txtExistencia_TextChanged);
             // 
             // lblExistencia
@@ -222,7 +222,7 @@ namespace _48284_TP6.Vistas
             this.txtPrecioFinal.Location = new System.Drawing.Point(173, 300);
             this.txtPrecioFinal.Name = "txtPrecioFinal";
             this.txtPrecioFinal.Size = new System.Drawing.Size(530, 26);
-            this.txtPrecioFinal.TabIndex = 16;
+            this.txtPrecioFinal.TabIndex = 6;
             // 
             // txtMargenDeGanacia
             // 
@@ -231,7 +231,7 @@ namespace _48284_TP6.Vistas
             this.txtMargenDeGanacia.Location = new System.Drawing.Point(173, 352);
             this.txtMargenDeGanacia.Name = "txtMargenDeGanacia";
             this.txtMargenDeGanacia.Size = new System.Drawing.Size(530, 26);
-            this.txtMargenDeGanacia.TabIndex = 17;
+            this.txtMargenDeGanacia.TabIndex = 7;
             // 
             // btnCancelar
             // 

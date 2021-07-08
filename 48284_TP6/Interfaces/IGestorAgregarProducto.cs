@@ -11,5 +11,6 @@ namespace _48284_TP6.Interfaces
         bool ConfirmarCreacion(string mensaje);
         void ConfirmacionCreacion(string mensaje);
         bool ConfirmacionCampoFaltante(string mensaje);
+        bool ConfirmacionProductoExistente(string mensaje);
     }
 }

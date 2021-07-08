@@ -40,6 +40,17 @@ namespace _48284_TP6.Presentadores
             return _vistaAgregarProducto.ConfirmacionCampoFaltante($"Por favor ingrese complete el Campo: {campo}");
         }
 
+        public bool MensajeProductoExistente(string codigo)
+        {
+            return _vistaAgregarProducto.ConfirmacionProductoExistente($"El Producto de codigo: {codigo} ya existe. Ingrese otro codigo.");
+        }
+
+        public bool ComprobarExistenciaProducto(int codigo)
+        {
+            if (PersistenciaDeDatos.BuscarProducto(codigo) != null) return MensajeProductoExistente(codigo.ToString());
+            return false;
+        }
+
         public string RecalcularMargen(double precioFinal, double costoConIva)
         {
             try

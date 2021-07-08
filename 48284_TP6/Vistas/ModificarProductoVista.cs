@@ -35,14 +35,73 @@ namespace _48284_TP6.Vistas
 
         private void btnModificarProducto_Click(object sender, EventArgs e)
         {
-            var producto = bsModificarProducto.Current as Producto;
-            _presentador.ModificarProducto(producto);
-            Dispose();
+
+            if(VerficarCampos())
+            {
+                var producto = bsModificarProducto.Current as Producto;
+                _presentador.ModificarProducto(producto);
+                Dispose();
+            }
+        }
+
+        public bool VerficarCampos()
+        {
+            var output = " ";
+            if (txtCodigo.Text.ToString() == "0")
+            {
+                output = lblCodigo.Text.ToString();
+                txtCodigo.BackColor = Color.Aqua;
+            }
+            if (string.IsNullOrEmpty(txtDescripcion.Text.ToString()))
+            {
+                output = lblDescripcion.Text.ToString();
+                txtDescripcion.BackColor = Color.Aqua;
+            }
+            if (txtCostoSinIva.Text.ToString() == "0")
+            {
+                output = lblCostoSinIva.Text.ToString();
+                txtCostoSinIva.BackColor = Color.Aqua;
+            }
+            if (txtPorcentajeIva.Text.ToString() == "0")
+            {
+                output = lblPorcentajeIva.Text.ToString();
+                txtPorcentajeIva.BackColor = Color.Aqua;
+            }
+            if (txtExistencia.Text.ToString() == "0")
+            {
+                output = lblExistencia.Text.ToString();
+                txtExistencia.BackColor = Color.Aqua;
+            }
+            if (output == " ") return true;
+
+            _presentador.MensajeCampoFaltante(output);
+
+            return false;
         }
 
         public bool ConfirmarModificarProducto(string mensaje)
         {
             return MessageBox.Show(mensaje, "Modificar Producto", MessageBoxButtons.YesNo) == DialogResult.Yes;
+        }
+
+        public bool ConfirmacionCampoFaltante(string mensaje)
+        {
+            return MessageBox.Show(mensaje, "Campo Faltante", MessageBoxButtons.OK) == DialogResult.OK;
+        }
+
+        private void txtExistencia_TextChanged(object sender, EventArgs e)
+        {
+            txtExistencia.BackColor = Color.White;
+        }
+
+        private void txtCostoSinIva_TextChanged(object sender, EventArgs e)
+        {
+            txtCostoSinIva.BackColor = Color.White;
+        }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+            txtDescripcion.BackColor = Color.White;
         }
     }
 }

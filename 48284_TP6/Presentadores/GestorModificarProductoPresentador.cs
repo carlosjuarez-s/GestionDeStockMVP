@@ -34,5 +34,9 @@ namespace _48284_TP6.Presentadores
             return PersistenciaDeDatos.BuscarProducto(codigo);
         }
 
+        public bool MensajeCampoFaltante(string campo)
+        {
+            return _vista.ConfirmacionCampoFaltante($"Por favor ingrese complete el Campo: {campo}");
+        }
     }
 }

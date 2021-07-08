@@ -69,12 +69,17 @@ namespace _48284_TP6.Vistas
 
         private void ListaProductosVista_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void productoBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //this.dataGridProductos.Sort(this.dataGridProductos.Columns[0], ListSortDirection.Ascending);
         }
     }
 }

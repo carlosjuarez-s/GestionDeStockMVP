@@ -9,5 +9,6 @@ namespace _48284_TP6.Interfaces
     public interface IGestorModificarProducto
     {
         bool ConfirmarModificarProducto(string mensaje);
+        bool ConfirmacionCampoFaltante(string mensaje);
     }
 }

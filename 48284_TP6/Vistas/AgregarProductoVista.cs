@@ -32,7 +32,9 @@ namespace _48284_TP6.Vistas
 
         private void btnGuardarProducto_Click(object sender, EventArgs e)
         {
-            if (VerficarCampos())
+            var codigoActual = int.Parse(txtCodigo.Text.ToString());
+
+            if (VerficarCampos() && _presentador.ComprobarExistenciaProducto(codigoActual) != true)
             {
                 var producto = bsAgregarProducto.DataSource;
                 _presentador.CrearProducto((Producto)producto);
@@ -50,6 +52,12 @@ namespace _48284_TP6.Vistas
         {
             MessageBox.Show(mensaje, "Creacion de Producto", MessageBoxButtons.OK);
         }
+
+        public bool ConfirmacionProductoExistente(string mensaje)
+        {
+            return MessageBox.Show(mensaje, "Producto Existente", MessageBoxButtons.OK) == DialogResult.OK;
+        }
+
 
         public bool VerficarCampos()
         {
@@ -85,6 +93,7 @@ namespace _48284_TP6.Vistas
 
             return false;
         }
+
 
         public bool ConfirmacionCampoFaltante(string mensaje)
         {

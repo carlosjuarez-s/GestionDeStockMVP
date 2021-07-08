@@ -159,6 +159,7 @@ namespace _48284_TP6.Vistas
             this.txtExistencia.Name = "txtExistencia";
             this.txtExistencia.Size = new System.Drawing.Size(530, 26);
             this.txtExistencia.TabIndex = 30;
+            this.txtExistencia.TextChanged += new System.EventHandler(this.txtExistencia_TextChanged);
             // 
             // lblExistencia
             // 
@@ -197,6 +198,7 @@ namespace _48284_TP6.Vistas
             this.txtCostoSinIva.Name = "txtCostoSinIva";
             this.txtCostoSinIva.Size = new System.Drawing.Size(530, 26);
             this.txtCostoSinIva.TabIndex = 26;
+            this.txtCostoSinIva.TextChanged += new System.EventHandler(this.txtCostoSinIva_TextChanged);
             // 
             // lblCostoSinIva
             // 
@@ -216,6 +218,7 @@ namespace _48284_TP6.Vistas
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(530, 26);
             this.txtDescripcion.TabIndex = 24;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
             // 
             // lblDescripcion
             // 
