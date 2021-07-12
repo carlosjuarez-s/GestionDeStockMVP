@@ -43,7 +43,9 @@ namespace _48284_TP6.Vistas
         {
             _presentador.EliminarProducto(ObtenerCodigoProductoSeleccionado());
             productoBindingSource.ResetBindings(true);
+            productoBindingSource.DataSource = PersistenciaDeDatos.GetProductos();
         }
+
 
         private void Modificar_Click(object sender, EventArgs e)
         {
@@ -52,6 +54,7 @@ namespace _48284_TP6.Vistas
             modificarProductoVista.StartPosition = FormStartPosition.CenterParent;
             modificarProductoVista.ShowDialog();
             productoBindingSource.ResetBindings(true);
+            productoBindingSource.DataSource = PersistenciaDeDatos.GetProductos();
         }
 
         private void IconCrearProducto_Click(object sender, EventArgs e)
@@ -60,6 +63,7 @@ namespace _48284_TP6.Vistas
             agregarProducto.StartPosition = FormStartPosition.CenterParent;
             agregarProducto.ShowDialog();
             productoBindingSource.ResetBindings(true);
+            productoBindingSource.DataSource = PersistenciaDeDatos.GetProductos();
         }
 
         public bool ConfirmarEliminarProducto(string mensaje)
@@ -69,12 +73,10 @@ namespace _48284_TP6.Vistas
 
         private void ListaProductosVista_Load(object sender, EventArgs e)
         {
-            
         }
 
         private void productoBindingSource_CurrentChanged(object sender, EventArgs e)
         {
-
         }
 
         private void dataGridProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)

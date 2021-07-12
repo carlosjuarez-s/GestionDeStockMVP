@@ -167,9 +167,9 @@ namespace _48284_TP6.Vistas
             this.lblExistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExistencia.Location = new System.Drawing.Point(32, 200);
             this.lblExistencia.Name = "lblExistencia";
-            this.lblExistencia.Size = new System.Drawing.Size(81, 20);
+            this.lblExistencia.Size = new System.Drawing.Size(91, 20);
             this.lblExistencia.TabIndex = 29;
-            this.lblExistencia.Text = "Existencia";
+            this.lblExistencia.Text = "Existencia *";
             // 
             // txtPorcentajeIva
             // 
@@ -186,9 +186,9 @@ namespace _48284_TP6.Vistas
             this.lblPorcentajeIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorcentajeIva.Location = new System.Drawing.Point(32, 153);
             this.lblPorcentajeIva.Name = "lblPorcentajeIva";
-            this.lblPorcentajeIva.Size = new System.Drawing.Size(132, 20);
+            this.lblPorcentajeIva.Size = new System.Drawing.Size(142, 20);
             this.lblPorcentajeIva.TabIndex = 27;
-            this.lblPorcentajeIva.Text = "Porcentaje de Iva";
+            this.lblPorcentajeIva.Text = "Porcentaje de Iva *";
             // 
             // txtCostoSinIva
             // 
@@ -206,9 +206,9 @@ namespace _48284_TP6.Vistas
             this.lblCostoSinIva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCostoSinIva.Location = new System.Drawing.Point(32, 108);
             this.lblCostoSinIva.Name = "lblCostoSinIva";
-            this.lblCostoSinIva.Size = new System.Drawing.Size(102, 20);
+            this.lblCostoSinIva.Size = new System.Drawing.Size(112, 20);
             this.lblCostoSinIva.TabIndex = 25;
-            this.lblCostoSinIva.Text = "Precio sin Iva";
+            this.lblCostoSinIva.Text = "Precio sin Iva *";
             // 
             // txtDescripcion
             // 
@@ -226,9 +226,9 @@ namespace _48284_TP6.Vistas
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.Location = new System.Drawing.Point(32, 63);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(92, 20);
+            this.lblDescripcion.Size = new System.Drawing.Size(102, 20);
             this.lblDescripcion.TabIndex = 23;
-            this.lblDescripcion.Text = "Descripcion";
+            this.lblDescripcion.Text = "Descripcion *";
             // 
             // btnModificarProducto
             // 

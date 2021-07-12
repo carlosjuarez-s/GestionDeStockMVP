@@ -22,7 +22,14 @@ namespace _48284_TP6.Presentadores
 
         public List<Producto> BuscarProductosPorDescripcion(string descripcion)
         {
-            return PersistenciaDeDatos.BuscarProductos(descripcion);
+            try
+            {
+                return PersistenciaDeDatos.BuscarProductos(descripcion);
+            }
+            catch(ArgumentOutOfRangeException e)
+            {
+                return null;
+            }
         } 
 
         public void EliminarProducto(int codigo)
